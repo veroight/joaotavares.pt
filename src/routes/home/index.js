@@ -1,13 +1,15 @@
-import style from './home.css';
-import 'preact'
+import styles from './styles.css';
+
+
+
 function Home(){
     return (
         <div>
-            <header class={style.header}>
+            <header class={[styles.header, styles.animate].join(' ')}>
                 <img src="https://picsum.photos/200"  />
                 <h1>João Tavares</h1>
                 <h2>Full stack web developer</h2>
-                <div class={style.social}>
+                <div class={styles.social}>
                     <a href="https://github.com/veroight" target="_blank"> 
                         <i class="fa fa-github fa-lg" ></i>
                     </a>
@@ -19,17 +21,18 @@ function Home(){
                     </a>
                 </div>
 
-                <nav class={style.menu}>
+                <nav class={styles.menu}>
                     <ul>
                         <li>
                             <a href="#">CV</a>
                         </li>
                         <li>
-                            <a href="#">About</a>
+                            <a href="/about">About</a>
                         </li>
                         <li>
-                            <a href="#">Projects</a>
+                            <a href="/projects">Projects</a>
                         </li>
+
                     </ul>
                 </nav>
                 

@@ -4,7 +4,7 @@ function Home(){
     return (
         <div>
             <header class={style.header}>
-                <img src={require("../../assets/joao.jpg")}  />
+                <img src="https://picsum.photos/200"  />
                 <h1>João Tavares</h1>
                 <h2>Full stack web developer</h2>
                 <div class={style.social}>

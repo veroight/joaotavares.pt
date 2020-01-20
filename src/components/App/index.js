@@ -1,5 +1,5 @@
 import './reset.css';
-import './styles.css';
+import styles from './styles.css';
 
 
 import { Router } from 'preact-router';
@@ -10,11 +10,14 @@ import Projects from '../../routes/projects';
 
 function App(){
     return (
-        <Router>
-            <Home path="/" />
-            <About path="/about" />
-            <Projects path="/projects" />
-        </Router>
+        <div class={styles.app}>
+            <Router>
+                <Home path="/" />
+                <About path="/about" />
+                <Projects path="/projects" />
+            </Router>
+        </div>
+      
     );
 }
 

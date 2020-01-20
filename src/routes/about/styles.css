@@ -1,0 +1,24 @@
+.skillBar > *{
+    margin: 10px;
+    flex: 1;
+   
+}
+
+.skillBar{
+    /* display: flex; */
+    width: 100%;
+    /* margin: auto; */
+}
+
+.about{
+   padding: 30px;
+}
+
+.about h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.about p{
+    padding: 12px;
+}

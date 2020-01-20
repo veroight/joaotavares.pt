@@ -1,0 +1,40 @@
+
+.barBox{
+    position: relative;
+    width: 95%;
+}
+
+.barBox .barDescription{
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skillBox{
+    height: 5px;
+    position: relative;
+    background-color: #f8f9fa;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bar{
+    height: 5px;
+    background: #007bff;
+    width: 100%;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+  }
+
+.animate{
+    animation: slideInFromLeft .6s;
+    animation-delay: .3s;
+    animation-fill-mode: both;
+}

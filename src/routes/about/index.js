@@ -7,10 +7,6 @@ import SkillBar from '../../components/SkillBar';
 function About(props){
 
 
-
-  
-  
-
     return (
         <div>
             <Header/>

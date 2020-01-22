@@ -1,7 +1,7 @@
 import Header from '../../components/Header';
 import { usePrerenderData } from '@preact/prerender-data-provider';
 import Markdown from 'markdown-to-jsx';
-import codeBlock from './formatted-code';
+// import codeBlock from './formatted-code';
 import styles from './styles.css';
 
 function project(props){
@@ -20,7 +20,7 @@ function project(props){
                         options={{
                             overrides: {
                                 code: {
-                                    component: codeBlock
+                                    // component: codeBlock
                                 }
                             }
                         }}

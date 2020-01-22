@@ -1,7 +1,7 @@
 import styles from './styles.css';
 
-const { HighLight, THEME } = require('preact-highlight');
-console.log(styles)
+import { HighLight, THEME } from 'preact-highlight';
+
 function codeBlock(props){
 	return(
 		<div>

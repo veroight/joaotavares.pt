@@ -4,7 +4,9 @@ import Header from '../../components/Header';
 import SkillBar from '../../components/SkillBar';
 
 
-function About(){
+function About(props){
+
+
     return (
         <div>
             <Header/>

@@ -17,13 +17,18 @@ a:hover{
 h1{
     font-size: 30px;
     font-weight: 600;
+    padding: 12px;
 }
 
 h2{
     font-size: 20px;
     font-weight: 600;
+    padding: 12px;
 }
 
 p{
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     padding: 12px;
+    font-weight: 300;
 }

@@ -7,13 +7,12 @@ import { Link } from 'preact-router/match';
 function Projects(props){
     const [data, loading, error] = usePrerenderData(props);
 
-    if (loading || !data) 
-        return(
-            <p>loading</p>
-        )
 
     const isMdFile = project => project.format === 'md';
-    const projects = data.projects.edges
+    
+    let projects;
+    if (data && !loading){
+        projects = data.projects.edges
         .filter(isMdFile)
         .map(project=>{
         return (
@@ -28,9 +27,11 @@ function Projects(props){
         );
       
     });
+    }
+    
 
     return (
-        <div class={styles.projects}>
+        <div>
             <Header/>
             <div class={styles.projects}>
                 {loading? <span>loading</span>:''}

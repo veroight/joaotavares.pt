@@ -26,7 +26,7 @@ const Code = ({ language, className, ...rest }) => {
 function codeBlock(props){
 	return(
 		<div>
-			<Code class={styles.light}  code={props.children} language="" />
+			<Code class={styles.light}  code={props.children} language={'js'} />
 		</div>
 		
 	); 

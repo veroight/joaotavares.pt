@@ -1,4 +1,4 @@
-// import './reset.css';
+import './reset.css';
 import styles from './styles.css';
 
 import { Provider } from '@preact/prerender-data-provider';

@@ -1,5 +1,5 @@
-import { Link } from 'preact-router/match';
 import styles from './styles.css';
+import { Link } from 'preact-router/match';
 
 function Header(){
     return (

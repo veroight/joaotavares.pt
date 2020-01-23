@@ -1,7 +1,7 @@
+import styles from './styles.css';
 import Header from '../../components/Header';
 import { usePrerenderData } from '@preact/prerender-data-provider';
 import { Link } from 'preact-router/match';
-import styles from './styles.css';
 
 
 function Projects(props){
@@ -30,7 +30,7 @@ function Projects(props){
     });
 
     return (
-        <div>
+        <div class={styles.projects}>
             <Header/>
             <div class={styles.projects}>
                 {loading? <span>loading</span>:''}

@@ -19,7 +19,7 @@ function Projects(props){
         return (
             <div>
                 <Link href={`/projects/${project.id}`}>
-                    <h1>{project.title}</h1>
+                    <h1>{project.details.title}</h1>
                     <p>{project.details.preview}</p>
                 </Link>
 

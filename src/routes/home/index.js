@@ -6,7 +6,7 @@ function Home(){
     return (
         <div>
             <header class={[styles.header, styles.animate].join(' ')}>
-                <img src="https://picsum.photos/200"  />
+                <img src="https://picsum.photos/200"  class={styles.img}/>
                 <h1>João Tavares</h1>
                 <h2>Full stack web developer</h2>
                 <div class={styles.social}>

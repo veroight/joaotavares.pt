@@ -48,7 +48,7 @@ function getFolders(source) {
 			format,
 			path: file,
 			details: getDetails(format, data),
-			preview: getPreview(data)
+			// preview: getPreview(data)
 		};
 	});
 	const nodes = allContent.filter(isDirectory).map(dir => getFolders(dir));

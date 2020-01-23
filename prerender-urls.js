@@ -29,7 +29,7 @@ module.exports = function() {
         
             pages.push({
                 url: `/projects/${edge.id}`,
-                content
+                content,
             });
 
         }

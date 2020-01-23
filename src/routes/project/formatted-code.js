@@ -1,15 +1,32 @@
 import styles from './styles.css';
+import { h } from 'preact';
 
-import { HighLight, THEME } from 'preact-highlight';
+import Prism from 'prismjs';
+import 'prismjs/themes/prism.css'; /* import prism themes */
+
+
+const InnerHTMLHelper = ({ tagName, html }) =>
+  h(tagName, { dangerouslySetInnerHTML: { __html: html } });
+
+
+const Code = ({ language, className, ...rest }) => {
+    return (
+        <pre
+            class={[`language-${language}`, rest.class, className]
+                .filter(Boolean)
+                .join(' ')}
+        >
+			<InnerHTMLHelper tagName='code' html={Prism.highlight(rest.code, Prism.languages.js, 'js')} />
+        </pre>
+    )
+};
+
+
 
 function codeBlock(props){
 	return(
 		<div>
-		<HighLight 
-			class={styles.light} 
-			language="js" 
-			code={props.children} 
-			theme={THEME.vs}/>
+			<Code class={styles.light}  code={props.children} language="" />
 		</div>
 		
 	); 

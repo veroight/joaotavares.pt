@@ -1,8 +1,10 @@
 import Header from '../../components/Header';
 import { usePrerenderData } from '@preact/prerender-data-provider';
 import Markdown from 'markdown-to-jsx';
-// import codeBlock from './formatted-code';
+import codeBlock from './formatted-code';
 import styles from './styles.css';
+import fullSizeImage from './fullSizeImage';
+
 
 function project(props){
 
@@ -13,20 +15,27 @@ function project(props){
         <div>
             <Header/>
             <div class={styles.project}>
-                <h1>projeto</h1>
                 {
                     data && !loading?
-                    <Markdown
+                    <div>
+                        <h1>{data.content.metadata.title}</h1>
+                         <Markdown
                         options={{
                             overrides: {
                                 code: {
-                                    // component: codeBlock
+                                    component: codeBlock
+                                },
+                                img: {
+                                    component: fullSizeImage
                                 }
                             }
                         }}
                         >{data.content.content}</Markdown>
+                    </div>   
                     : 
                     <p>loading</p>
+                  
+                   
                 }
                 
             </div>

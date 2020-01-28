@@ -23,14 +23,14 @@ function Home(){
 
                 <nav class={styles.menu}>
                     <ul>
-                        <li>
+                        {/* <li>
                             <a href="#">CV</a>
+                        </li> */}
+                        <li>
+                            <a href="/about">Sobre</a>
                         </li>
                         <li>
-                            <a href="/about">About</a>
-                        </li>
-                        <li>
-                            <a href="/projects">Projects</a>
+                            <a href="/projects">Projetos</a>
                         </li>
 
                     </ul>

@@ -16,14 +16,10 @@ function Projects(props){
         .filter(isMdFile)
         .map(project=>{
         return (
-            <div>
-                <Link href={`/projects/${project.id}`}>
+                <Link class={styles.project} href={`/projects/${project.id}`}>
                     <h1>{project.details.title}</h1>
                     <p>{project.details.preview}</p>
                 </Link>
-
-                
-            </div>
         );
       
     });
@@ -35,7 +31,7 @@ function Projects(props){
             <Header/>
             <div class={styles.projects}>
                 {loading? <span>loading</span>:''}
-                {data? <span>{projects}</span>:''}
+                {data? projects:''}
             </div>
             
         </div>

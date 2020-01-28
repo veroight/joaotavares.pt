@@ -1,5 +1,5 @@
 .active{
-    color: #00c;
+    color: black !important;
 }
 
 
@@ -14,7 +14,7 @@
     bottom: 6px;
     left:0;
     margin-left: 7.5%; /* (100-85)/2 */
-    background: #00c;
+    background: black;
 }
 
 .navbar > a::after{
@@ -31,16 +31,17 @@
     bottom: 6px;
     left:0;
     margin-left: 7.5%; /* (100-85)/2 */
-    background: #00c;
+    background: black;
 }
 
 .navbar{
     text-align: right;
-    padding: 30px 20px 0 0;
+    padding: 30px 20px 30px 0;
 }
 
 .navbar > a{
     padding: 10px;
     position: relative;
     text-decoration: none;
+    color: rgba(0,0,0,.5);
 }

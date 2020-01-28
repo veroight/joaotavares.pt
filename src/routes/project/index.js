@@ -4,7 +4,7 @@ import Markdown from 'markdown-to-jsx';
 import codeBlock from './formatted-code';
 import styles from './styles.css';
 import fullSizeImage from './fullSizeImage';
-
+import openNewTab from './openNewTab';
 
 function project(props){
 
@@ -27,6 +27,9 @@ function project(props){
                                 },
                                 img: {
                                     component: fullSizeImage
+                                },
+                                a: {
+                                    component: openNewTab
                                 }
                             }
                         }}

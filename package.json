@@ -9,15 +9,8 @@
     "copyManifest": "cp manifest.json build",
     "serve": "preact build && preact serve",
     "dev": "preact watch --prerender --prerenderUrls ./prerender-urls.js",
-    "lint": "eslint src",
     "pretty-quick": "pretty-quick"
   },
-  "eslintConfig": {
-    "extends": "eslint-config-synacor"
-  },
-  "eslintIgnore": [
-    "build/*"
-  ],
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged --pattern '**/*.{ts,js,css,html}'"
@@ -25,8 +18,6 @@
   },
   "devDependencies": {
     "@preact/prerender-data-provider": "0.0.1",
-    "eslint": "^6.0.1",
-    "eslint-config-synacor": "^3.0.4",
     "husky": "^4.2.1",
     "if-env": "^1.0.0",
     "imagemin-mozjpeg": "^8.0.0",

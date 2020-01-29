@@ -4,19 +4,6 @@ import { h } from "preact";
 import Prism from "prismjs";
 import "prismjs/themes/prism.css"; /* import prism themes */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 const InnerHTMLHelper = ({ tagName, html }) =>
   h(tagName, { dangerouslySetInnerHTML: { __html: html } });
 

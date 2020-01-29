@@ -30,6 +30,10 @@
     color: black;
 }
 
+.social img {
+    width: 25px;
+}
+
 .menu {
     margin-top: 50px;
 }

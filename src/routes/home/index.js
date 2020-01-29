@@ -1,4 +1,7 @@
 import styles from './styles.css';
+// import twitter from '../../assets/images/twitter.svg';
+import mail from '../../assets/images/mail.svg';
+import github from '../../assets/images/github.svg';
 
 function Home() {
     return (
@@ -11,9 +14,10 @@ function Home() {
                     <a href="https://github.com/veroight" target="_blank">
                         <i class="fa fa-github fa-lg"></i>
                     </a>
-                    <a href="https://twitter.com/veroight" target="_blank">
-                        <i class="fa fa-twitter fa-lg"></i>
-                    </a>
+                    {/* <a href="https://twitter.com/veroight" target="_blank">
+                        <img src={twitter} />
+                    </a> */}
+
                     <a
                         href="mailto:veroight@gmail.com?Subject=joaotavares.com"
                         target="_top"

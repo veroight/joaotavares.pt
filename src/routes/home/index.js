@@ -12,7 +12,7 @@ function Home() {
                 <h2>Full stack web developer</h2>
                 <div class={styles.social}>
                     <a href="https://github.com/veroight" target="_blank">
-                        <i class="fa fa-github fa-lg"></i>
+                        <img src={github} />
                     </a>
                     {/* <a href="https://twitter.com/veroight" target="_blank">
                         <img src={twitter} />
@@ -22,7 +22,7 @@ function Home() {
                         href="mailto:veroight@gmail.com?Subject=joaotavares.com"
                         target="_top"
                     >
-                        <i class="fa fa-envelope fa-lg"></i>
+                        <img src={mail} />
                     </a>
                 </div>
 

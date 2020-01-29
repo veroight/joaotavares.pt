@@ -9,7 +9,8 @@
     "copyManifest": "cp manifest.json build",
     "serve": "preact build && preact serve",
     "dev": "preact watch --prerender --prerenderUrls ./prerender-urls.js",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "pretty-quick": "pretty-quick"
   },
   "eslintConfig": {
     "extends": "eslint-config-synacor"

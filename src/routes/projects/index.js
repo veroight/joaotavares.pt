@@ -3,37 +3,30 @@ import Header from '../../components/Header';
 import { usePrerenderData } from '@preact/prerender-data-provider';
 import { Link } from 'preact-router/match';
 
-
-function Projects(props){
+function Projects(props) {
     const [data, loading, error] = usePrerenderData(props);
 
-
     const isMdFile = project => project.format === 'md';
-    
+
     let projects;
-    if (data && !loading){
-        projects = data.projects.edges
-        .filter(isMdFile)
-        .map(project=>{
-        return (
+    if (data && !loading) {
+        projects = data.projects.edges.filter(isMdFile).map(project => {
+            return (
                 <Link class={styles.project} href={`/projects/${project.id}`}>
                     <h1>{project.details.title}</h1>
                     <p>{project.details.preview}</p>
                 </Link>
-        );
-      
-    });
+            );
+        });
     }
-    
 
     return (
         <div>
-            <Header/>
+            <Header />
             <div class={styles.projects}>
-                {loading? <span>loading</span>:''}
-                {data? projects:''}
+                {loading ? <span>loading</span> : ''}
+                {data ? projects : ''}
             </div>
-            
         </div>
     );
 }

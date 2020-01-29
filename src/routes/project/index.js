@@ -6,46 +6,40 @@ import styles from './styles.css';
 import fullSizeImage from './fullSizeImage';
 import openNewTab from './openNewTab';
 
-function project(props){
-
+function project(props) {
     const [data, loading, error] = usePrerenderData(props);
-
 
     return (
         <div>
-            <Header/>
+            <Header />
             <div class={styles.project}>
-                {
-                    data && !loading?
+                {data && !loading ? (
                     <div>
                         <h1>{data.content.metadata.title}</h1>
-                         <Markdown
-                        options={{
-                            overrides: {
-                                code: {
-                                    component: codeBlock
-                                },
-                                img: {
-                                    component: fullSizeImage
-                                },
-                                a: {
-                                    component: openNewTab
+                        <Markdown
+                            options={{
+                                overrides: {
+                                    code: {
+                                        component: codeBlock
+                                    },
+                                    img: {
+                                        component: fullSizeImage
+                                    },
+                                    a: {
+                                        component: openNewTab
+                                    }
                                 }
-                            }
-                        }}
-                        >{data.content.content}</Markdown>
-                    </div>   
-                    : 
+                            }}
+                        >
+                            {data.content.content}
+                        </Markdown>
+                    </div>
+                ) : (
                     <p>loading</p>
-                  
-                   
-                }
-                
+                )}
             </div>
-           
         </div>
     );
 }
-
 
 export default project;

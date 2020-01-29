@@ -1,16 +1,14 @@
-.skillBar > *{
+.skillBar > * {
     margin: 10px;
     flex: 1;
-   
 }
 
-.skillBar{
+.skillBar {
     /* display: flex; */
     width: 100%;
     /* margin: auto; */
 }
 
-.about{
-   padding: 15px;
+.about {
+    padding: 15px;
 }
-

@@ -1,47 +1,46 @@
-.active{
+.active {
     color: black !important;
 }
 
-
-.navbar > a:hover::after{
+.navbar > a:hover::after {
     -webkit-transition: width 0.35s;
     transition: width 0.35s;
-    content: "";
+    content: '';
     position: absolute;
     height: 2px;
     width: 85%;
     display: block;
     bottom: 6px;
-    left:0;
+    left: 0;
     margin-left: 7.5%; /* (100-85)/2 */
     background: black;
 }
 
-.navbar > a::after{
-    content: "";
+.navbar > a::after {
+    content: '';
     width: 0;
 }
 
-.active::after{
-    content: "";
+.active::after {
+    content: '';
     position: absolute;
     height: 2px;
     width: 85% !important;
     display: block;
     bottom: 6px;
-    left:0;
+    left: 0;
     margin-left: 7.5%; /* (100-85)/2 */
     background: black;
 }
 
-.navbar{
+.navbar {
     text-align: right;
     padding: 30px 20px 30px 0;
 }
 
-.navbar > a{
+.navbar > a {
     padding: 10px;
     position: relative;
     text-decoration: none;
-    color: rgba(0,0,0,.5);
+    color: rgba(0, 0, 0, 0.5);
 }

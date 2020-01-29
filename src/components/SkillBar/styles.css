@@ -1,16 +1,15 @@
-
-.barBox{
+.barBox {
     position: relative;
     width: 95%;
 }
 
-.barBox .barDescription{
+.barBox .barDescription {
     padding: 3px;
     display: flex;
     justify-content: space-between;
 }
 
-.skillBox{
+.skillBox {
     height: 5px;
     position: relative;
     background-color: #f8f9fa;
@@ -18,7 +17,7 @@
     overflow: hidden;
 }
 
-.bar{
+.bar {
     height: 5px;
     background: #d23669;
     width: 100%;
@@ -31,10 +30,10 @@
     100% {
         transform: translate3d(0, 0, 0);
     }
-  }
+}
 
-.animate{
-    animation: slideInFromLeft .6s;
-    animation-delay: .3s;
+.animate {
+    animation: slideInFromLeft 0.6s;
+    animation-delay: 0.3s;
     animation-fill-mode: both;
 }

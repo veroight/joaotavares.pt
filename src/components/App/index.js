@@ -10,10 +10,7 @@ import About from '../../routes/about';
 import Projects from '../../routes/projects';
 import Project from '../../routes/project';
 
-
-function App(props){
-
-
+function App(props) {
     return (
         <Provider value={props}>
             <div class={styles.app}>
@@ -21,12 +18,10 @@ function App(props){
                     <Home path="/" />
                     <About path="/about" />
                     <Projects path="/projects" />
-                    <Project path="/projects/:id"/>
+                    <Project path="/projects/:id" />
                 </Router>
             </div>
-      </Provider>
-        
-      
+        </Provider>
     );
 }
 

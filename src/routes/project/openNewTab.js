@@ -1,7 +1,9 @@
-function openNewTab(props){
-    console.log(props)
+function openNewTab(props) {
+    console.log(props);
     return (
-        <a {...props} target="__blank">{props.children}</a>
+        <a {...props} target="__blank">
+            {props.children}
+        </a>
     );
 }
 

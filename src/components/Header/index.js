@@ -1,12 +1,22 @@
 import styles from './styles.css';
 import { Link } from 'preact-router/match';
 
-function Header(){
+function Header() {
     return (
         <nav class={styles.navbar}>
-            <Link activeClassName={styles.active} href="/">Home</Link>
-            <Link activeClassName={styles.active} href="/about">Sobre</Link>
-            <Link activeClassName={styles.active} href="/projects" path="/projects/:id?">Projetos</Link>
+            <Link activeClassName={styles.active} href="/">
+                Home
+            </Link>
+            <Link activeClassName={styles.active} href="/about">
+                Sobre
+            </Link>
+            <Link
+                activeClassName={styles.active}
+                href="/projects"
+                path="/projects/:id?"
+            >
+                Projetos
+            </Link>
         </nav>
     );
 }

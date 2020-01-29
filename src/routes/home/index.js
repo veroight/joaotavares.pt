@@ -19,7 +19,7 @@ function Home() {
                     </a> */}
 
                     <a
-                        href="mailto:veroight@gmail.com?Subject=joaotavares.com"
+                        href="mailto:joao@joaotavares.pt?Subject=joaotavares.pt"
                         target="_top"
                     >
                         <img src={mail} />

@@ -1,5 +1,4 @@
 import styles from './styles.css';
-
 import Header from '../../components/Header';
 import SkillBar from '../../components/SkillBar';
 

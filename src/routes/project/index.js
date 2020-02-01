@@ -5,6 +5,7 @@ import codeBlock from './formatted-code';
 import styles from './styles.css';
 import fullSizeImage from './fullSizeImage';
 import openNewTab from './openNewTab';
+import Loader from '../../components/Loader';
 
 function project(props) {
     const [data, loading, error] = usePrerenderData(props);
@@ -35,7 +36,7 @@ function project(props) {
                         </Markdown>
                     </div>
                 ) : (
-                    <p>loading</p>
+                    <Loader>loading</Loader>
                 )}
             </div>
         </div>

@@ -2,6 +2,7 @@ import styles from './styles.css';
 import Header from '../../components/Header';
 import { usePrerenderData } from '@preact/prerender-data-provider';
 import { Link } from 'preact-router/match';
+import Loader from '../../components/Loader';
 
 function Projects(props) {
     const [data, loading, error] = usePrerenderData(props);
@@ -24,7 +25,7 @@ function Projects(props) {
         <div>
             <Header />
             <div class={styles.projects}>
-                {loading ? <span>loading</span> : ''}
+                {loading ? <Loader>loading</Loader> : ''}
                 {data ? projects : ''}
             </div>
         </div>

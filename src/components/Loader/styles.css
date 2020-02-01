@@ -5,8 +5,8 @@
     border-top: 3px solid black;
     width: 20px;
     height: 20px;
-    -webkit-animation: spin 1s linear infinite; /* Safari */
-    animation: spin 1s linear infinite;
+    -webkit-animation: spin 0.45s linear infinite; /* Safari */
+    animation: spin 0.45s linear infinite;
 }
 
 /* Safari */

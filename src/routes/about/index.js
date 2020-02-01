@@ -1,6 +1,7 @@
 import styles from './styles.css';
 import Header from '../../components/Header';
 import SkillBar from '../../components/SkillBar';
+import { Link } from 'preact-router/match';
 
 function About(props) {
     return (
@@ -8,44 +9,73 @@ function About(props) {
             <Header />
             <div class={styles.about}>
                 <h1>Sobre mim</h1>
-                <p></p>
+                <p>João Tavares, programador.</p>
                 <p>
-                    Gosto de criar sideprojects para poder aplicar os meus
-                    conhecimentos de programacao.
+                    Gosto de criar side projects para poder aplicar e
+                    desenvolver os meus conhecimentos de programacão.
                 </p>
                 <p>
-                    Quando estava no 6 ano, criei varios blogs (blogspot :p) de
-                    download de programas e jogos (tudo legal :D) e comecei a
+                    Quando estava no 6º ano, criei vários blogs (blogspot 😜) de
+                    download de programas e jogos (tudo legal 😅) e comecei a
                     aprender algum html para poder alterar os temas. Tinha até
-                    um contador de visualizaçoes :DD
+                    um contador de visualizações 😎
                 </p>
                 <p>
-                    Fiz o meu primeiro website quando estava no 10 ano. Era uma
-                    rede social de poemas. (saber mais aqui)
+                    Fiz o meu primeiro website quando estava no 10º ano. Era uma
+                    rede social de poemas.{' '}
+                    <Link href="/projects/poemas.md">(saber mais aqui)</Link>
                 </p>
-
                 <p>
-                    Na verdade, ja tinha "feito" um antes. No filme "a rede
-                    social" que conta como o facebook foi criado, ha uma parte
-                    do video que o mark zuckerberg cria um site (facemash) que
-                    mostra duas pessoas lado a lado e temos que escolher uma
-                    pessoa. [imagem do site].
+                    A minha curiosidade por websites veio um poucos antes,
+                    quando "criei" um clone do facemash{' '}
+                    <Link href="/projects/facemash.md">(saber mais aqui)</Link>
                 </p>
-
                 <p>
-                    Estava obcecado por programacao e em 2015 increvi me para as
+                    Estava obcecado por programação e em 2015 increvi-me para as
                     olimpiadas nacionais de informatica (ONI). Houve 3 fases. Na
-                    primeira participaram 157 alunos e so passavam os 30
-                    primeiros. fiquei em 13. Na segunda so passavam 8. fiquei em
-                    8. e na ultima passavam 4. fiquei em 4. O problema e que
-                    esta 3 fase fazia media com a 2 e no final fiquei em 5. Os 4
-                    primeiros iam representar portugal nas olimpiadas
-                    internacionais no Cazaquistão.
+                    primeira participaram 157 alunos e só passavam os 30
+                    primeiros. fiquei em 13º. Na segunda so passavam 8. fiquei
+                    em 8º. E na última passavam 4. fiquei em 4º 😶. O problema é
+                    que esta 3ª fase fazia media com a 2ª e no final fiquei em
+                    5º 😪. Os 4 primeiros iam representar portugal nas
+                    olimpiadas internacionais no Cazaquistão.
                 </p>
-
-                <div class={styles.skillBar}>
-                    <SkillBar percentage={80} skill="PHP" />
-                    <SkillBar percentage={83} skill="HTML5/CSS3" />
+                <p>
+                    Nos anos seguintes, tentei aprender o máximo de coisas
+                    possíveis, desde programar microcontroladores, eletrónica,
+                    mobile development, algoritmos, web security, ...
+                </p>
+                <p>
+                    Foi recentemente que comecei a foca-me mais na parte web com
+                    um interesse muito grande em performance.
+                </p>
+                <p>
+                    Depois de ter criado os sites que referi anteriormente,
+                    tentei criar algo mais interessante. Foi então que criei o
+                    adoryo, uma rede social com website e app, que vem
+                    modernizar as salas de salas de chat antigas e que conta com
+                    30 mil utilizadores (a maioria brasileiros)
+                    <Link href="/projects/adoryo.md">(saber mais aqui)</Link>
+                </p>
+                <p>
+                    Vou colocar alguns dos projetos mais importantes{' '}
+                    <Link href="/projects">aqui</Link>.
+                </p>
+                <h1>Skills</h1>
+                <div class={styles.skillBox}>
+                    <div class={styles.skillFrontend}>
+                        <h2>FrontEnd</h2>
+                        <SkillBar percentage={70} skill="JavaScript" />
+                        <SkillBar percentage={60} skill="HTML5/CSS3" />
+                        <SkillBar percentage={70} skill="React" />
+                    </div>
+                    <div class={styles.skillFrontend}>
+                        <h2>BackEnd</h2>
+                        <SkillBar percentage={70} skill="Nodejs" />
+                        <SkillBar percentage={50} skill="MongoDB" />
+                        <SkillBar percentage={30} skill="Redis" />
+                        <SkillBar percentage={40} skill="Flask" />
+                    </div>
                 </div>
             </div>
         </div>

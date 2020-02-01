@@ -45,10 +45,8 @@ function Home() {
                 <hr />
                 <div>
                     <p>
-                        <i class="fa fa-code"></i>
-                        &nbsp; with &nbsp;
-                        <i class="fa fa-heart"></i>
-                        &nbsp; by João Tavares
+                        {'</> '}
+                        with ❤ by João Tavares
                     </p>
                 </div>
             </footer>

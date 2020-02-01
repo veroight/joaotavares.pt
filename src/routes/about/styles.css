@@ -1,14 +1,28 @@
-.skillBar > * {
-    margin: 10px;
-    flex: 1;
+.skillBox {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    /* margin: auto; */
 }
 
-.skillBar {
-    /* display: flex; */
-    width: 100%;
-    /* margin: auto; */
+.skillBox > * {
+    flex: 1 1 auto;
+}
+
+.skillBox > * > *:first-child {
+    text-align: center;
+}
+
+.skillBox > * > * {
+    min-width: 300px;
+    padding: 5px;
+}
+
+.skillBox > * h2 {
+    margin-top: 20px;
 }
 
 .about {
     padding: 15px;
+    margin-bottom: 150px;
 }

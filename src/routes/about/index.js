@@ -67,14 +67,33 @@ function About(props) {
                         <h2>FrontEnd</h2>
                         <SkillBar percentage={70} skill="JavaScript" />
                         <SkillBar percentage={60} skill="HTML5/CSS3" />
+                        <SkillBar percentage={60} skill="Bootstrap" />
                         <SkillBar percentage={70} skill="React" />
+                        <SkillBar percentage={30} skill="VueJs" />
                     </div>
                     <div class={styles.skillFrontend}>
                         <h2>BackEnd</h2>
                         <SkillBar percentage={70} skill="Nodejs" />
-                        <SkillBar percentage={50} skill="MongoDB" />
-                        <SkillBar percentage={30} skill="Redis" />
-                        <SkillBar percentage={40} skill="Flask" />
+                        <SkillBar percentage={60} skill="MongoDB" />
+                        <SkillBar percentage={50} skill="SQL" />
+                        <SkillBar percentage={35} skill="Redis" />
+                        <SkillBar percentage={60} skill="Flask" />
+                    </div>
+                </div>
+                <div class={styles.skillBox}>
+                    <div class={styles.skillFrontend}>
+                        <h2>Other Skills</h2>
+                        <SkillBar percentage={60} skill="React Native" />
+                        <SkillBar percentage={50} skill="Python" />
+                        <SkillBar percentage={50} skill="C/C++" />
+                        <SkillBar percentage={40} skill="Java" />
+                    </div>
+                    <div class={styles.skillFrontend}>
+                        <h2>Tools</h2>
+                        <SkillBar percentage={70} skill="Git" />
+                        <SkillBar percentage={50} skill="Webpack" />
+                        <SkillBar percentage={50} skill="Babel" />
+                        <SkillBar percentage={60} skill="Docker" />
                     </div>
                 </div>
             </div>

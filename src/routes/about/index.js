@@ -9,7 +9,10 @@ function About(props) {
             <Header />
             <div class={styles.about}>
                 <h1>Sobre mim</h1>
-                <p>João Tavares, programador.</p>
+                <p>
+                    João Tavares, programador.
+                    <span class={styles.blink}>_</span>
+                </p>
                 <p>
                     Gosto de criar side projects para poder aplicar e
                     desenvolver os meus conhecimentos de programacão.

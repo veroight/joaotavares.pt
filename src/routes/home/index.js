@@ -12,7 +12,9 @@ function Home() {
                     class={styles.img}
                 />
                 <h1>João Tavares</h1>
-                <h2>Full stack web developer</h2>
+                <h2>
+                    Full stack web developer<span class={styles.blink}>_</span>
+                </h2>
                 <div class={styles.social}>
                     <a href="https://github.com/veroight" target="_blank">
                         <img src={github} />

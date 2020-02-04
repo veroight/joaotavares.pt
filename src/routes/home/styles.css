@@ -114,3 +114,15 @@ footer hr {
         transform: translateY(0);
     }
 }
+
+.blink {
+    font-weight: 700;
+    font-size: 25px;
+    animation: blinker 0.5s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}

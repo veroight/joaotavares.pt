@@ -26,3 +26,15 @@
     padding: 15px;
     margin-bottom: 150px;
 }
+
+.blink {
+    font-weight: 700;
+    font-size: 20px;
+    animation: blinker 0.5s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}

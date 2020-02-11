@@ -5,10 +5,10 @@ preview: 'Website pessoal'
 
 Este foi um projeto que o objetivo era apenas mostrar os meus trabalhos, mas foi mais do que isso. Permitiu-me aprender varias coisas que não conhecia:
 
--   preact
--   prerender
--   netlify
--   markdown
+- preact
+- prerender
+- netlify
+- markdown
 
 ## Preact
 
@@ -20,9 +20,9 @@ Este método consiste em "pre renderizar" uma página para html no lado do servi
 
 # Skills
 
--   preact
--   css (tudo programado de raiz, sem frameworks)
--   nodejs (prerender)
+- preact
+- css (tudo programado de raiz, sem frameworks)
+- nodejs (prerender)
 
 # Open source
 

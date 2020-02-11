@@ -11,18 +11,18 @@ import Projects from '../../routes/projects';
 import Project from '../../routes/project';
 
 function App(props) {
-    return (
-        <Provider value={props}>
-            <div class={styles.app}>
-                <Router>
-                    <Home path="/" />
-                    <About path="/about" />
-                    <Projects path="/projects" />
-                    <Project path="/projects/:id" />
-                </Router>
-            </div>
-        </Provider>
-    );
+  return (
+    <Provider value={props}>
+      <div class={styles.app}>
+        <Router>
+          <Home path="/" />
+          <About path="/about" />
+          <Projects path="/projects" />
+          <Project path="/projects/:id" />
+        </Router>
+      </div>
+    </Provider>
+  );
 }
 
 export default App;

@@ -3,35 +3,35 @@
 
 html,
 body {
-    /* font-family: 'Poppins', sans-serif; */
-    font-family: 'Nunito', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Nunito', sans-serif;
 }
 
 a:hover {
-    color: black !important;
+  color: black !important;
 }
 
 .app {
-    max-width: 750px;
-    margin: auto;
+  max-width: 750px;
+  margin: auto;
 }
 
 h1 {
-    font-size: 24px;
-    font-weight: 700;
-    padding: 12px;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 12px;
 }
 
 h2 {
-    font-size: 16px;
-    font-weight: 700;
-    padding: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px;
 }
 
 p {
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    padding: 12px;
-    font-weight: 400;
-    font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding: 12px;
+  font-weight: 400;
+  font-size: 16px;
 }

@@ -5,9 +5,9 @@ preview: 'Primeiro website que criei'
 
 Este foi o meu primeiro website. Uma rede social para partilhar poemas com as seguintes funcionalidades:
 
--   Autenticação
--   Feed (de poemas)
--   Comentarios e likes
+- Autenticação
+- Feed (de poemas)
+- Comentarios e likes
 
 ![](/assets/images/poemas.png)
 
@@ -21,7 +21,7 @@ O site era todo renderizado no servidor (tipo php) e para colocar a funcionalida
 
 # Skills
 
--   Flask (python)
--   SQL (SQLAlchemy)
--   bootstrap
--   Ajax (x => json)
+- Flask (python)
+- SQL (SQLAlchemy)
+- bootstrap
+- Ajax (x => json)

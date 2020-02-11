@@ -1,27 +1,27 @@
 .project ul {
-    display: block;
-    list-style-type: disc;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
-    line-height: 1.5;
-    padding-left: 40px;
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  line-height: 1.5;
+  padding-left: 40px;
 }
 
 .light code {
-    /* background-color: #f8f9fa !important; */
+  /* background-color: #f8f9fa !important; */
 }
 
 .project {
-    padding: 10px;
-    padding-bottom: 60px;
+  padding: 10px;
+  padding-bottom: 60px;
 }
 
 .fullSizeImage {
-    width: 90%;
-    height: auto;
-    max-width: 90%;
-    display: block;
-    margin: auto;
+  width: 90%;
+  height: auto;
+  max-width: 90%;
+  display: block;
+  margin: auto;
 }

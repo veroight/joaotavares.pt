@@ -1,6 +1,7 @@
 import styles from './styles.css';
 import Header from '../../components/Header';
-import SkillBar from '../../components/SkillBar';
+import SkillBar from 'preact-skillbar';
+import 'preact-skillbar/dist/index.css';
 import { Link } from 'preact-router/match';
 
 function About(props) {

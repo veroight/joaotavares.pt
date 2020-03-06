@@ -16,7 +16,7 @@ function About(props) {
         </p>
         <p>
           Gosto de criar side projects para poder aplicar e desenvolver os meus
-          conhecimentos de programacão.
+          conhecimentos de programação.
         </p>
         <p>
           Quando estava no 6º ano, criei vários blogs (blogspot 😜) de download

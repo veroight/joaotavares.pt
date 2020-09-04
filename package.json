@@ -29,7 +29,7 @@
     "pretty-quick": "^2.0.1"
   },
   "dependencies": {
-    "markdown-to-jsx": "^6.10.3",
+    "markdown-to-jsx": "^6.11.4",
     "preact": "^10.1.0",
     "preact-markup": "^1.6.0",
     "preact-render-to-string": "^5.1.2",

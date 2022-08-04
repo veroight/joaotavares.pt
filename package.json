@@ -5,10 +5,10 @@
   "license": "MIT",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
-    "build": "preact build --prerender --prerenderUrls ./prerender-urls.js && npm run copyManifest",
+    "build": "preact build --template src/template.html --prerender --prerenderUrls ./prerender-urls.js && npm run copyManifest",
     "copyManifest": "cp manifest.json build",
     "serve": "preact build && preact serve",
-    "dev": "preact watch --prerender --prerenderUrls ./prerender-urls.js",
+    "dev": "preact watch --template src/template.html --prerender --prerenderUrls ./prerender-urls.js",
     "pretty-quick": "pretty-quick"
   },
   "husky": {

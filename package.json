@@ -5,8 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
-    "build": "preact build --template src/template.html --prerender --prerenderUrls ./prerender-urls.js && npm run copyManifest",
-    "copyManifest": "cp manifest.json build",
+    "build": "preact build --template src/template.html --prerender --prerenderUrls ./prerender-urls.js",
     "serve": "preact build && preact serve",
     "dev": "preact watch --template src/template.html --prerender --prerenderUrls ./prerender-urls.js",
     "pretty-quick": "pretty-quick"
@@ -38,3 +37,6 @@
     "prismjs": "^1.19.0"
   }
 }
+
+
+

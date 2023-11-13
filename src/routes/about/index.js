@@ -15,11 +15,11 @@ function About(props) {
           <span class={styles.blink}>_</span>
         </p>
         <p>
-          Gosto de criar side projects para poder aplicar e desenvolver os meus
+          Nos meus tempos livres costumo criar side projects para poder desenvolver e aplicar os meus
           conhecimentos de programação.
         </p>
         <p>
-          Quando estava no 6º ano, criei vários blogs (blogspot 😜) de download
+          O meu gosto por este mundo começou quando ainda estava no 6º ano, onde criei vários blogs (blogspot 😜) de download
           de programas e jogos (tudo legal 😅) e comecei a aprender algum html
           para poder alterar os temas. Tinha até um contador de visualizações 😎
         </p>
@@ -34,13 +34,8 @@ function About(props) {
           <Link href="/projects/facemash.md">(saber mais aqui)</Link>
         </p>
         <p>
-          Estava obcecado por programação e em 2015 increvi-me para as
-          olimpiadas nacionais de informatica (ONI). Houve 3 fases. Na primeira
-          participaram 157 alunos e só passavam os 30 primeiros. fiquei em 13º.
-          Na segunda so passavam 8. fiquei em 8º. E na última passavam 4. fiquei
-          em 4º 😶. O problema é que esta 3ª fase fazia media com a 2ª e no
-          final fiquei em 5º 😪. Os 4 primeiros iam representar portugal nas
-          olimpiadas internacionais no Cazaquistão.
+          Essa foi uma fase em que estava obcecado pela programação e em 2015 increvi-me para as
+          olimpiadas nacionais de informatica (ONI) onde consegui obter um 4º lugar na final.
         </p>
         <p>
           Nos anos seguintes, tentei aprender o máximo de coisas possíveis,
@@ -70,13 +65,13 @@ function About(props) {
             <SkillBar percentage={60} skill="HTML5/CSS3" />
             <SkillBar percentage={60} skill="Bootstrap" />
             <SkillBar percentage={70} skill="React" />
-            <SkillBar percentage={30} skill="VueJs" />
+            <SkillBar percentage={60} skill="VueJs" />
           </div>
           <div class={styles.skillFrontend}>
             <h2>BackEnd</h2>
             <SkillBar percentage={70} skill="Nodejs" />
             <SkillBar percentage={60} skill="MongoDB" />
-            <SkillBar percentage={50} skill="SQL" />
+            <SkillBar percentage={60} skill="SQL" />
             <SkillBar percentage={35} skill="Redis" />
             <SkillBar percentage={60} skill="Flask" />
           </div>
@@ -84,10 +79,10 @@ function About(props) {
         <div class={styles.skillBox}>
           <div class={styles.skillFrontend}>
             <h2>Other Skills</h2>
-            <SkillBar percentage={60} skill="React Native" />
+            <SkillBar percentage={50} skill="React Native" />
             <SkillBar percentage={50} skill="Python" />
             <SkillBar percentage={50} skill="C/C++" />
-            <SkillBar percentage={40} skill="Java" />
+            <SkillBar percentage={50} skill="Java" />
           </div>
           <div class={styles.skillFrontend}>
             <h2>Tools</h2>
